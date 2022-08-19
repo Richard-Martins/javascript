@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.631);
+            color: white;
+        }
+
+        input{
+            font-size: 18px;
+            font-weight: bold;
+            width: 100px;
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        input.btn{
+            width: 80px;
+            cursor: pointer;
+        }
+        .resultado{
+            font-size: 18px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Soma</h1>
+    <input type="number" name="ipt" id="ipt1"> 
+    <span>+</span>
+    <input type="number" name="ipt" id="ipt2">
+    <input type="button" value="Somar" class="btn">
+    <div class="resultado">Resultado</div>
+    <script>
+        function clicar(){
+            var txtn1 = document.getElementById('ipt1')
+            var txtn2 = document.getElementById('ipt2')
+            var botao = document.getElementsByClassName('btn')
+            var res = document.querySelector('div.resultado')
+            var n1 = Number(txtn1)
+            var n2 = Number(txtn2)
+            r = "n1 + n2"
+            addEventListener('click', clicar)
+            
+        }   
+    </script>
+</body>
+</html>
