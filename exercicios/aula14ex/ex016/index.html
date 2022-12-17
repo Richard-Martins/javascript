@@ -5,32 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="estilo.css" />
-    <title>Verificador de Idade</title>
+    <title>Super Contador</title>
   </head>
   <body>
     <header>
-      <h1>Verificador de Idade</h1>
+      <h1>Vamos Contar</h1>
     </header>
     <section>
-      <div>
-        <p>
-          <label for="txtinicio">Início:</label>
-          <input type="number" name="txtinicio" id="txtinicio" min="0" />
-        </p>
-        <p>
-          <label for="txtfim">Fim:</label>
-          <input type="number" name="txtfim" id="txtfim" min="0" />
-        </p>
-        <p>
-          <label for="txtpasso">Passo:</label>
-          <input type="number" name="txtpasso" id="txtpasso" min="0" />
-        </p>
-        <p>
-          <input type="button" value="Contar" onclick="contar()" />
-        </p>
+      <div id="dados">
+        <p>Início: <input type="number" name="inicio" id="txti"></p>
+        <p>Fim: <input type="number" name="fim" id="txtf"></p>
+        <p>Passo: <input type="number" name="passo" id="txtp"></p>
+        <p><input type="button" value="contar" onclick="contar()"></p>
       </div>
-      <div id="res">Preparando a contagem...</div>
-    </section>
+      <div id="res">
+        Preparando a contagem...
+      </div>
     <footer>&copy; CursoemVideo</footer>
     <script src="script.js"></script>
   </body>

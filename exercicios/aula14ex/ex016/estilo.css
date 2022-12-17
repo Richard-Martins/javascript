@@ -24,3 +24,7 @@ footer {
   text-align: center;
   color: white;
 }
+
+.hello {
+  display: block;
+}
